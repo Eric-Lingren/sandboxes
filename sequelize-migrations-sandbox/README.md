@@ -8,6 +8,23 @@
 * Migrations
 * Seeds
 
+### About Server:
+This server is optimized for production environments because it utilizes Sequelize authorization with migrations rather than syncs.  It contains all the middleware needed for routing and error handling. It also includes morgan in dev environments.
+
+### About Router:
+This includes a boilerplate router for the Users with all the crud methods.  It also includes a table join between Users and Tasks to ensure relations were appropriately created in the migrations.
+
+### About Models and Relations
+This repo has two models - User and Task.  They are both related to each other.  These are created via the Sequelize CLI.  More on this later.
+
+### About Migrations
+This repo uses migrations in order to build and update tables/relations correctly upon new instantiation or enhancement in order to prevent the inherent issues that come with sync, as well as to perform version control, data integrity, and rollback capabilities.
+
+### About Seeds
+Seeds allow you to post or remove new records to your tables via the CLI, rather than manually creating dummy data.
+
+
+
 Setting up table and migration example:
 
 npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string

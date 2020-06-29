@@ -5,7 +5,6 @@ const bodyParser = require("body-parser")
 const morgan = require('morgan')
 const { PORT, NODE_ENV } = require('./config/config')
 
-// Test comment
 //  .ENV SETUP
     // Enables use of .env varibles in the server
 require("dotenv").config();
@@ -51,21 +50,12 @@ const db = require("./models");
 // ROUTES
 app.use('/user', require("./routes/User"))
 
+
 //  SENDING BUILD FILE
     //  Server sends a compiled build file to users on web browsers
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
-
-// RUNNING SERVER
-    //  Server initializes, runs, and listens
-// db.sequelize.sync().then(() => {
-//     console.log(`[0] Connected to the database: ${db.sequelize.config.database}`)
-//     app.listen(PORT, () => {
-//         console.log(`[+] Express is listening on port: ${PORT}`)
-//     })
-// })
 
 
 // RUNNING SERVER
