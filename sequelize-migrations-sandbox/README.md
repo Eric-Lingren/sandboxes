@@ -41,37 +41,44 @@ OR
 
 Now you will have a new schema created in the models file.  Double-check it to make sure you have all the data and fields you require.  You can always edit this file rather than deleting it and rebuilding it with the cli.
 
+### Migrations Part 1 - Building Skeletons:
+Anytime we need our database updated with the changes in the code, we need to stage any changes that happened before we update.  These stages are called skeletons.  You do not need a new skeleton for each minor change if you are tweaking or changing things.   
 
+Skeletons are created with the following script:    
+``npx sequelize-cli migration:generate --name migration-skeleton``   
 
+An example of how to use this is:   
+``npx sequelize-cli migration:generate --tasks-users-relations migration-skeleton``   
 
-Configuration migration:
-npx sequelize-cli db:migrate
+### Migrations Part 2 - Utilizing Skeletons:
+Now we have a skelton created.  This will be for the changes we need in the database.  Each skeleton will have an Up and Down attribute.  Up will be everything that we update to the database.  Down will be to undo our changes.  These should match.  In the skeleton we can create new tables, new columns or new relations.
 
-Undo last migration:
-npx sequelize-cli db:migrate:undo
+### Migrations Part 3 - Updating Navicat/SQL via Skeleton:
+Anytime we need our database updated with the changes in the code, we use the skeleton we created to perform that action with the migration. 
 
+In order to push our skeleton migration update we run:   
+``npx sequelize-cli db:migrate``   
 
+In order to revert our skeleton migration we run:   
+``npx sequelize-cli db:migrate:undo``
 
-Creating a new seed:
-npx sequelize-cli seed:generate --name demo-user
+### Seeds - Building Test Data
+We can use seeds to bootstrap and create dummy data very quickly.  A seed is a boilerplate row we can use to inject into our database to validate functionality.
 
+To creating a new seed:   
+``npx sequelize-cli seed:generate --name demo-user``   
+You can customize the data in the file that was created.
 
-Add seeds to DB:
-npx sequelize-cli db:seed:all
+Once your data is how you want, you can insert it into the database by using:   
+``npx sequelize-cli db:seed:all``   
 
+To remove your seeds from the database:   
+``npx sequelize-cli db:seed:undo``  
 
-Undoing seeds:
-
-If you wish to undo the most recent seed:
-npx sequelize-cli db:seed:undo
-
-If you wish to undo a specific seed:
-npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data
+If you wish to undo a specific seed:   
+``npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data``   
 
 If you wish to undo all seeds:
-npx sequelize-cli db:seed:undo:all
+``npx sequelize-cli db:seed:undo:all``   
 
 
-
-Generate new Migration skeleton:
-npx sequelize-cli migration:generate --name migration-skeleton
