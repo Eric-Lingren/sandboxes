@@ -1,4 +1,12 @@
+# Sequelize Migrations Sandbox
+## This is a boilerplate repo to bootstrap a full backend with Sequelize Migrations
 
+### Repo Includes:
+* Server
+* Router
+* Models + Relations
+* Migrations
+* Seeds
 
 Setting up table and migration example:
 
