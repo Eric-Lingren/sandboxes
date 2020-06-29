@@ -30,13 +30,13 @@ The remainder of this guide will assume you have cloned this repo as a starting 
 
 ### Installation:
 
-First make sure you have sequelize cli installed:
+First make sure you have sequelize cli installed:   
 ``npm install --save-dev sequelize-cli``   
 
 ### Creating New Tables:
-Next, to set up a new database table from scratch, we need to generate a new model.  You can specify all attributes you want to be included for the table in the cli.  Here are two examples which we used in the creation of this repo:
+Next, to set up a new database table from scratch, we need to generate a new model.  You can specify all attributes you want to be included for the table in the cli.  Here are two examples which we used in the creation of this repo:   
 ``npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string``   
-OR
+OR   
 ``npx sequelize-cli model:generate --name Task --attributes name:string,description:string,isComplete:boolean,userId:integer``    
 
 Now you will have a new schema created in the models file.  Double-check it to make sure you have all the data and fields you require.  You can always edit this file rather than deleting it and rebuilding it with the cli.
