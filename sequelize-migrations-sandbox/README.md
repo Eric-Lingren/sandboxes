@@ -51,7 +51,7 @@ An example of how to use this is:
 ``npx sequelize-cli migration:generate --tasks-users-relations migration-skeleton``   
 
 ### Migrations Part 2 - Utilizing Skeletons:
-Now we have a skelton created.  This will be for the changes we need in the database.  Each skeleton will have an Up and Down attribute.  Up will be everything that we update to the database.  Down will be to undo our changes.  These should match.  In the skeleton we can create new tables, new columns or new relations.
+Now we have a skelton created.  This will be for the changes we need in the database.  Each skeleton will have an Up and Down attribute.  Up will be everything that we update to the database.  Down will be to undo our changes.  These should match.  In the skeleton we can create new tables, new columns or new relations.  Make your edits now.  ***Before you move on to Part 3, dont forget to change any existing models to ensure they reflect any new columns you added to your skeleton!***
 
 ### Migrations Part 3 - Updating Navicat/SQL via Skeleton:
 Anytime we need our database updated with the changes in the code, we use the skeleton we created to perform that action with the migration. 
@@ -67,7 +67,7 @@ We can use seeds to bootstrap and create dummy data very quickly.  A seed is a b
 
 To creating a new seed:   
 ``npx sequelize-cli seed:generate --name demo-user``   
-You can customize the data in the file that was created.
+You can customize the data in the seed file that was created.
 
 Once your data is how you want, you can insert it into the database by using:   
 ``npx sequelize-cli db:seed:all``   
@@ -82,3 +82,5 @@ If you wish to undo all seeds:
 ``npx sequelize-cli db:seed:undo:all``   
 
 
+## Custon NPM Scripts
+Add custom npm deployment scripts here.
