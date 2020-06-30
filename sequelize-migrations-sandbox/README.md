@@ -82,5 +82,20 @@ If you wish to undo all seeds:
 ``npx sequelize-cli db:seed:undo:all``   
 
 
-## Custon NPM Scripts
-Add custom npm deployment scripts here.
+## Custom NPM Scripts
+This repo's package json has a few custom scripts included to make these some of these commands a little easier.  
+
+Here's your shortcuts:
+
+Push Seeds to DB:   
+``npm run-script db-seed``   
+
+Revert DB Seeds:
+``npm run-script db-seed-undo``   
+
+Perfrom New Migration:   
+``npm run-script db-migrate``   
+
+Revert Migration:   
+``npm run-script db-migrate-undo``
+
