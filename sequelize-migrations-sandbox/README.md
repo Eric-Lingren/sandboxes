@@ -4,6 +4,7 @@
 ### Repo Includes:
 * Server
 * Router
+* MySQL Database
 * Models + Relations
 * Migrations
 * Seeds
@@ -78,7 +79,7 @@ To remove your seeds from the database:
 If you wish to undo a specific seed:   
 ``npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data``   
 
-If you wish to undo all seeds:
+If you wish to undo all seeds:   
 ``npx sequelize-cli db:seed:undo:all``   
 
 
@@ -90,7 +91,7 @@ Here's your shortcuts:
 Push Seeds to DB:   
 ``npm run-script db-seed``   
 
-Revert DB Seeds:
+Revert DB Seeds:   
 ``npm run-script db-seed-undo``   
 
 Perfrom New Migration:   
