@@ -43,13 +43,13 @@ OR
 Now you will have a new schema created in the models file.  Double-check it to make sure you have all the data and fields you require.  You can always edit this file rather than deleting it and rebuilding it with the cli.
 
 ### Migrations Part 1 - Building Skeletons:
-Anytime we need our database updated with the changes in the code, we need to stage any changes that happened before we update.  These stages are called skeletons.  You do not need a new skeleton for each minor change if you are tweaking or changing things.   
+Anytime we need our database updated with the changes in the code, we need to stage any changes that happened before we update.  These stages are called skeletons.  You do not need a new skeleton for each minor change if you are tweaking or changing things.  Skeletons are also used for version control of your db changes.  
 
 Skeletons are created with the following script:    
 ``npx sequelize-cli migration:generate --name migration-skeleton``   
 
 An example of how to use this is:   
-``npx sequelize-cli migration:generate --tasks-users-relations migration-skeleton``   
+``npx sequelize-cli migration:generate --name tasks-users-relations-skeleton``   
 
 ### Migrations Part 2 - Utilizing Skeletons:
 Now we have a skelton created.  This will be for the changes we need in the database.  Each skeleton will have an Up and Down attribute.  Up will be everything that we update to the database.  Down will be to undo our changes.  These should match.  In the skeleton we can create new tables, new columns or new relations.  Make your edits now.  ***Before you move on to Part 3, dont forget to change any existing models to ensure they reflect any new columns you added to your skeleton!***
