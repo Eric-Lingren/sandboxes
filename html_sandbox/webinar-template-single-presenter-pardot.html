@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="http://go.pardot.com" >
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content="%%description%%"/>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/629080/6514832/css/fonts.css" />
+		<title>%%title%%</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                font-family: "Whitney A", "Whitney B";
+            }
+            body {
+                min-height: 100vh;
+            }
+            .logo-header-wrapper {
+                padding: 10px 0px 10px 50px;
+            }
+            .hero-image-wrapper {
+                margin: 0;
+                padding: 0;
+            }
+            .hero-image{
+                width: 100vw;
+                height: auto;
+            }
+            .hero-image img { 
+                width: 100vw !important;
+                height: auto !important;
+            }
+            .date-header-container{
+                background-color: #2e5798;
+                color: white;
+                width: 100%;
+                padding: 20px 20px 20px 15px;
+                margin-bottom: 50px;
+                margin-top: -5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .date-container-sub-wrapper {
+                width: 90%;
+                display: flex;
+                align-content: center;
+                align-items: center;
+            }
+            .inner-date-wrapper {
+                display: flex;
+            }
+            .header-date-injector-wrapper {
+                display: flex;
+            }
+            .header-date-injector-wrapper p {
+                margin-right: 3px;
+                font-size: 26px !important;
+            }
+            .webinar-date-banner-icon{
+                height: 45px;
+                width: 45px;
+                margin-right: 15px;
+            }
+            .date-banner-font {
+                font-size: 26px;
+                margin-right: 10px;
+            }
+            .center-content {
+                display: flex;
+            }
+            .left-column-wrapper {
+                width: 60%;
+                align-content: center;
+                display: flex;
+                justify-content: center;
+            }
+            .left-column-content-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                margin-left: 15vw;
+            }
+            .left-column-header {
+                color: #882677;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 40px;
+            }
+            .left-column-subheader {
+                color: #346094;
+                font-size: 22px;
+                font-weight: 600;
+                margin: 25px 0 15px;
+                line-height: 32px;
+            }
+            .left-column-paragraph-text {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 32px;
+                margin-bottom: 18px;
+                color: #575756;
+            }
+            .right-column-wrapper {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .right-column-content-container {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                background-color: #ecedee;
+                width: 60%;
+                margin-right: 0px;
+            }
+            .register-now-header {
+                color: #2e5798;
+                margin: 25px 0 12.5px 0;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            .form-wrapper{
+                margin: 30px 0 30px 0;
+                width: 100%;
+            }
+            .form-date{
+                color: #575756;
+                font-size: 18px;
+            }
+            form p label {
+                display: none;
+            }
+            input {
+                width: 100% !important;
+                padding: 5px 2px !important;
+            }
+            input[type=submit] {
+                padding: 13px 40px !important;
+                border-radius: 26px !important;
+                background-color: #f5C845 !important;
+                border: 2px solid #f5C845 !important;
+                color: white !important;
+                font-size: 16px !important;
+                line-height: 17px !important;
+                letter-spacing: .24px !important;
+                width: auto !important;
+                font-weight: 600 !important;
+            }
+            input[type=submit]:hover, input[type=submit]:focus {
+                background: #D18A00 !important;
+                border: 2px solid #D18A00 !important;
+                cursor: pointer;
+            }
+            label {
+                font-weight: normal !important;
+                margin-bottom: 5px !important;
+            }
+            .bio-container {
+                width: 100%;
+                background-color: #ecedee;
+                color: #575756;
+                padding: 50px 25px 50px 25px;
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+            }
+            .bio-wrapper {
+                width: 80%;
+            }
+            .bio-content-header{
+                color: #2e5798;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .bio-img-name-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .presenter-image:empty{
+                min-height: 50px;
+                min-width: 250px;
+            }
+            .bio-content-presenter-name {
+                color: #2e5798;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .bio-text-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+            .bio-content-text{
+                padding: 0 25px 0 25px;
+                line-height: 26px;
+                font-size: 17px;
+            }
+            .footer {
+                background-color: #2e5798;
+                color: white;
+                height: 112px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+            .footer-content-left-container {
+                width: 60%;
+                align-content: center;
+                
+            }
+            .footer-content-right-container {
+                width: 30%;
+            }
+            @media (max-width: 768px){
+                .sub-logo{
+                    display: none;
+                }
+                .date-banner-font{
+                    font-size: 18px;
+                }
+                .header-date-injector-wrapper p{
+                    font-size: 18px !important; 
+                }
+                .center-content {
+                    flex-direction: column;
+                }
+                .left-column-wrapper {
+                    width: 100%;
+                }
+                .left-column-content-container {
+                    margin-left: 0vw;
+                }
+                .right-column-wrapper {
+                    width: 100%;
+                }
+                .right-column-content-container {
+                    width: 90%;
+                }
+                input[type=submit] {
+                    width: 275px !important;
+                }
+                .footer {
+                    flex-direction: column;
+                }
+                .footer-content-right-container {
+                    padding-top: 10px;
+                }
+                .footer-image {
+                    width: 40vw;
+                }
+                .footer {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                }
+                .footer-content-left-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .footer-content-right-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            @media (max-width: 601px){
+                .date-container-sub-wrapper{
+                    width: 98%;
+                }
+                .date-banner-font {
+                    margin: 0 4px 0 0;
+                }
+                .inner-date-wrapper {
+                    flex-wrap: wrap;
+                }
+                .header-date-injector-wrapper {
+                    flex-wrap: wrap;
+                }
+            }
+            @media (max-width: 426px){
+                .header-date-injector-wrapper p {
+                    margin-right: 0;
+                }
+                .bio-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .bio-text-wrapper {
+                    align-items: flex-start;
+                }
+                .bio-text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .bio-content-text {
+                    padding: 0;
+                }
+                .footer-image {
+                    width: 70vw;
+                }
+                
+            }
+        </style>
+        
+	</head>
+
+	<body>
+        <div class='logo-header-wrapper'>
+            <img src="http://go.pardot.com/l/908202/2021-02-11/395d/908202/1613081448Lauq1ZlV/iod_corporate_logo.jpg" alt="InsideOut Development Logo">
+            <img class='sub-logo' src="http://go.pardot.com/l/908202/2021-02-11/395g/908202/1613081561TsGWvzAf/iod_corporate_slogan_jpg.png" alt="Coaching that works">
+        </div>
+        <div class='hero-image-wrapper'> 
+            <div class='hero-image' pardot-region=”pardot_webinar_hero_img” pardot-region-type=”pardot” ></div> 
+        </div>
+        <div class='date-header-container'> 
+            <div class='date-container-sub-wrapper'>
+                <img class='webinar-date-banner-icon' src='http://go.pardot.com/l/908202/2021-03-01/4hr3/908202/1614635176zQhdd8HC/Webinar_icon.svg' />
+                <div class='inner-date-wrapper'>
+                    <span class='date-banner-font'> Webinar | </span>
+                    <span class='header-date-injector-wrapper' pardot-region=”pardot_wysiwyg_date_header” pardot-region-type=”pardot” class='date-banner-font'></span>
+                </div>
+            </div>
+        </div>
+        <div class='center-content'>
+            <div class='left-column-wrapper'> 
+                <div class='left-column-content-container'>
+                    <h2 pardot-region=”pardot_wysiwyg_header” pardot-region-type=”pardot” class="left-column-header">
+                        Add Header Here
+                    </h2>
+                    <h3 pardot-region=”pardot_wysiwyg_subheader” pardot-region-type=”pardot” class="left-column-subheader">
+                        Add Subheader Here
+                    </h3>
+                    <p pardot-region=”pardot_wysiwyg_paragraph” pardot-region-type=”pardot” class="left-column-paragraph-text"> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione debitis cumque ullam ea, sint architecto laudantium minus repellendus doloribus molestias officiis eligendi ab recusandae culpa veniam earum voluptates voluptatem!
+                    </p>
+                </div>
+            </div>
+            <div class='right-column-wrapper'> 
+                <div class='right-column-content-container'>
+                    <h1 class='register-now-header'> REGISTER NOW! </h1>
+                    <p class='form-date' id='form-date-subheader' pardot-region=”pardot_wysiwyg_form_date” pardot-region-type=”pardot”>
+
+                    </p>
+                    <div class='form-wrapper'>
+                        %%content%%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='bio-container'>
+            <div class='bio-wrapper'>
+                <h3 class="bio-content-header"> About the Presenter</h3>
+                <div class='bio-text-wrapper'>
+                    <div class='bio-img-name-wrapper'>
+                        <div class='presenter-image' pardot-region=”pardot_wysiwyg_bio_image_injector” pardot-region-type=”pardot”> 
+                        </div>
+                        <h3 pardot-region=”pardot_wysiwyg_bio_name_injector” pardot-region-type=”pardot” class="bio-content-presenter-name"> Presenter Name </h3>
+                    </div>
+                    <p pardot-region=”pardot_wysiwyg_bio_text_injector” pardot-region-type=”pardot” class='bio-content-text'>
+                        PRESENTER BIO HERE:  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione debitis cumque ullam ea, sint architecto laudantium minus repellendus doloribus molestias officiis eligendi ab recusandae culpa veniam earum voluptates voluptatem!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+            <div class='footer-content-left-container'>
+                <img class='footer-image' src='http://go.pardot.com/l/908202/2021-02-11/395j/908202/1613082038EM7sksvh/corporate_logo_white.jpg' alt='Corporate Logo White' />
+            </div>
+            <div class='footer-content-right-container'>
+                <span>© 2021 InsideOut Development, LLC.</span>
+            </div>
+        </div>
+	</body>
+</html>

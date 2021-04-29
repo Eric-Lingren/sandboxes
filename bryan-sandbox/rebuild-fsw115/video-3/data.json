@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "name": "John",
+            "age": 20,
+            "isAlive": true,
+            "friends": ["sam", "jane", "max"],
+            "address": {
+                "street": "123 street",
+                "city": "seattle"
+            }
+        },
+        {
+            "name": "John",
+            "age": 20,
+            "isAlive": true,
+            "friends": ["sam", "jane", "max"],
+            "address": {
+                "street": "123 street",
+                "city": "seattle"
+            }
+        },
+        {
+            "name": "John",
+            "age": 20,
+            "isAlive": true,
+            "friends": ["sam", "jane", "max"],
+            "address": {
+                "street": "123 street",
+                "city": "seattle"
+            }
+        }
+    ]
+}

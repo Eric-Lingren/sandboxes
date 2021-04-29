@@ -1,26 +1,26 @@
 // Given a string: 'aaabbbcc' return  'a3b3c2'
 // or 'aaaabbccc'  =>  'a4b3c3'    you know what I mean
-// a4b2c3 for the above..
+// // a4b2c3 for the above..
 
-function stringCount(str){
-    let splitStr = str.split('')
-    let aCount = 0
-    let bCount = 0
-    let cCount = 0
-    for(let i=0; i<splitStr.length; i++){
-        if(splitStr[i] === 'a'){
-            aCount += 1
-        } else if(splitStr[i] === 'b'){
-            bCount += 1
-        } else {
-            cCount += 1
-        }
-    }
-    let result = `a${aCount}b${bCount}c${cCount}`
-    //console.log(result);
-}
+// function stringCount(str){
+//     let splitStr = str.split('')
+//     let aCount = 0
+//     let bCount = 0
+//     let cCount = 0
+//     for(let i=0; i<splitStr.length; i++){
+//         if(splitStr[i] === 'a'){
+//             aCount += 1
+//         } else if(splitStr[i] === 'b'){
+//             bCount += 1
+//         } else {
+//             cCount += 1
+//         }
+//     }
+//     let result = `a${aCount}b${bCount}c${cCount}`
+//     //console.log(result);
+// }
 
-stringCount('aaabbbcc')
+// stringCount('aaabbbcc')
 
 
 
@@ -54,6 +54,28 @@ stringCount('aaabbbcc')
 
 
 
+
+
+
+// const runBob = () => {
+//     let bob = {
+//         company: 'codingCampus',
+//         cohortsTaught: 1,
+//         studentsHelped: 1,
+//     }
+
+//     for(let i = 0; i < 7; i++){
+//         bob.cohortsTaught = bob.cohortsTaught += 25
+//         bob.studentsHelped = bob.cohortsTaught * 20
+//         if(i === 3) bob.company = 'vSchool'
+//     }
+//     return bob
+// }
+
+// console.log(runBob())
+
+// const fullStackDev = (user) => { return user + 'JavaScript, React + Native, MongoDB, SQL, Express, Node, D3, HTML, CSS, Python, Arduino, MQL4, PHP, Salesforce, Linux, AWS, Digital Ocean, NGINX, Cisco CCENT'} 
+// console.log(fullStackDev(`Eric Lingren: `))
 
 
 

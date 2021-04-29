@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './App.css'
 
 
 const baseURL = 'https://shakespeare.podium.com/api/reviews';
@@ -53,16 +54,25 @@ class App extends Component {
   
   render(){
     return (
-      <div className="App">
-        App
-        { this.getData() }
+      <div className="Blog-post-wrapper">
+        {/* App
+        { this.getData() } */}
+
+        <h1 className='blog-post-header'>Survey fatigue is real, insight from Twitter can help</h1>
+        <p clasName='author'>by <a className='author-link'>Joey</a> </p>
+
+        <p className='blog-paragraph'>  "Survey finds 95% of people don't like taking surveys," could be the headline of your favourite satirical website, which wouldn't be far from the truth. Overwhelmed by the increasing number of requests for feedback, consumers are avoiding surveys all together which is impacting response rates. The telephone survey, for example, has seen a steep decline in response rates since the mid-90s, dropping from 36% in 1997 to just 6% in 2018, according to Pew Research1. Of course, many variables are at play when it comes to response rates across different types of surveys, but the reality is that survey fatigue is real and it impacts both the volume and quality of feedback received. The insight they provide is also limited to the questions asked. So, is there another way?     </p>
+        <p className='blog-paragraph'>  "Survey finds 95% of people don't like taking surveys," could be the headline of your favourite satirical website, which wouldn't be far from the truth. Overwhelmed by the increasing number of requests for feedback, consumers are avoiding surveys all together which is impacting response rates. The telephone survey, for example, has seen a steep decline in response rates since the mid-90s, dropping from 36% in 1997 to just 6% in 2018, according to Pew Research1. Of course, many variables are at play when it comes to response rates across different types of surveys, but the reality is that survey fatigue is real and it impacts both the volume and quality of feedback received. The insight they provide is also limited to the questions asked. So, is there another way?     </p>
+        <p className='blog-paragraph'>  "Survey finds 95% of people don't like taking surveys," could be the headline of your favourite satirical website, which wouldn't be far from the truth. Overwhelmed by the increasing number of requests for feedback, consumers are avoiding surveys all together which is impacting response rates. The telephone survey, for example, has seen a steep decline in response rates since the mid-90s, dropping from 36% in 1997 to just 6% in 2018, according to Pew Research1. Of course, many variables are at play when it comes to response rates across different types of surveys, but the reality is that survey fatigue is real and it impacts both the volume and quality of feedback received. The insight they provide is also limited to the questions asked. So, is there another way?     </p>
+        <p className='blog-paragraph'>  "Survey finds 95% of people don't like taking surveys," could be the headline of your favourite satirical website, which wouldn't be far from the truth. Overwhelmed by the increasing number of requests for feedback, consumers are avoiding surveys all together which is impacting response rates. The telephone survey, for example, has seen a steep decline in response rates since the mid-90s, dropping from 36% in 1997 to just 6% in 2018, according to Pew Research1. Of course, many variables are at play when it comes to response rates across different types of surveys, but the reality is that survey fatigue is real and it impacts both the volume and quality of feedback received. The insight they provide is also limited to the questions asked. So, is there another way?     </p>
+        
       </div>
     );
   }
   
 }
 
-export default App;
+export default BlogPost;
 
 
 

@@ -1,0 +1,240 @@
+<html>
+    <head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            background-color: #ecedee;
+        }
+        svg {
+            height: 30px;
+            width: auto;
+            margin: 10px;
+        }
+        .page-wrap {
+            width: 60%;
+            background-color: white;
+        }
+        .logo-header-wrapper {
+            padding: 10px;
+            width: 100%;
+        }
+        .hero-image-wrapper {
+            margin: 0;
+            padding: 0;
+            margin-bottom: -5px;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+        .date-header-container{
+            background-color: #2e5798;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .date-banner-font {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: .5px;
+        }
+        .center-content {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .center-content-top-paragraph-container {
+            padding: 30px;
+        }
+        .center-content-top-paragraph-content {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: .5px;
+        }
+        .left-column-wrapper {
+            float: left;
+            width: 50%;
+            align-content: center;
+        }
+        .left-column-content-container {
+            position: relative;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            padding-top: 65px;
+        }
+        .add-to-calendar-button{
+            color: white;
+            background-color: #f5C845;
+            font-size: 22px;
+            border: none;
+            padding: 5px 20px 5px 20px;
+            margin-top: 50px;
+            text-decoration: none;
+        }
+        .right-column-wrapper {
+            float: right;
+            width: 50%;
+        }
+        .right-column-content-container {
+            position: relative;
+            text-align: left;
+            align-items: left;
+            align-content: left;
+            width: 80%;
+            float: right;
+            margin-right: 25px;
+        }
+        .register-now-header {
+            color: #2e5798;
+            margin: 0;
+        }
+        .form-wrapper{
+            margin: 30px 0 30px 0;
+        }
+        .details-text-row {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 7px;
+        }
+        .details-subheader {
+            padding-right: 10px;
+        }
+        .webinar-link-container {
+            margin: 20px 0 20px 0;
+        }
+        .webinar-link {
+            color: #2e5798;
+            font-size: 18px;
+            letter-spacing: .5px;
+            
+        }
+        .center-bottom-wrapper {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .center-content-bottom-paragraph-container {
+            padding: 40px;
+            margin-top: 40px;
+            width: 70%;
+            align-self: center;
+        }
+        .center-content-bottom-paragraph-content {
+            line-height: 24px;
+            font-style: italic;
+            letter-spacing: .5px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #2e5798;
+            color: white;
+            height: 112px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            padding: 20px;
+        }
+        .footer-content-left-container {
+            width: 50%;
+            align-content: center;
+        }
+        .footer-content-right-container {
+            width: 40%;
+            align-content: center;
+        }
+        @media (max-width: 768px){
+            .page-wrap {
+                width: 100%;
+            }
+            .center-content {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .right-column-wrapper {
+                width: 300px;
+            }
+            .left-column-wrapper {
+                width: 100%;
+            }
+            .footer{
+                flex-direction: column;
+            }
+            .footer-content-left-container {
+                width: 100%;
+            }
+            .footer-content-right-container {
+                width: 100%;
+            }
+        }
+    </style>
+    </head>
+	<body>
+        <div class="page-wrap">
+            <!-- <div class='hero-image-wrapper'> 
+                <img class="hero-image" src="https://insideoutdev.sfo2.digitaloceanspaces.com/iod/webinars/coaching-that-works-webinar.webp" alt="Hubspot Landing Page_Coaching-that-Works">
+            </div> -->
+        <div class='date-header-container'> 
+            <span class='date-banner-font'> REGISTRATION CONFIRMATION </span>
+        </div>
+        <div class='center-content-top-paragraph-container'>
+            <p class='center-content-top-paragraph-content'>
+                Confirmation for the <b>Coaching That Works - A Deeper Exploration of InsideOut Coaching</b> webinar. We can’t wait to see you there! If you can’t make it, a recording will be sent to everyone who has registered.
+            </p>
+        </div>
+        <div class='center-content'>
+            <div class='right-column-wrapper'> 
+                <div class='right-column-content-container'>
+                    <h2 class='register-now-header'> Details </h2>
+                    <div class='form-wrapper'>
+                        <div class='details-text-row'>
+                            <h3 class='details-subheader'> Date: </h3>
+                            <span> Tuesday, Mar 30, 2021 </span> 
+                        </div>
+                        <div class='details-text-row'>
+                            <h3 class='details-subheader'> Time: </h3>
+                            <span> 12:00 PM ET </span> 
+                        </div>
+                        <div class='details-text-row'>
+                            <h3 class='details-subheader'> Duration: </h3>
+                            <span> 60 min. </span> 
+                        </div>
+                        <div class="webinar-link-container">
+                            <a class='webinar-link' href="https://zoom.us/j/98690279102">Link to Webinar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='center-bottom-wrapper'>
+            <div class='center-content-bottom-paragraph-container'>
+                <p class='center-content-bottom-paragraph-content'>
+                    Please send your questions, comments, and feedback to: <a href="mailto:lauraanderson@insideoutdev.com">lauraanderson@insideoutdev.com</a>
+                </p>
+            </div>
+        </div>
+        <div class='footer'>
+            <div class='footer-content-right-container'>
+                <span>© 2021 InsideOut Development, LLC.</span>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>
