@@ -139,12 +139,47 @@
 
 
 
-function getFahren(cityTemp) {
-    // let temp = cityTemp.data.main.temp
-    let temp = cityTemp
-    console.log(temp)
-    console.log( ((9 / 5) * (temp - 273.15) + 32).toFixed(2) )
-    return Math.floor( ((9 / 5) * (temp - 273.15) + 32) )
-}
+// function getFahren(cityTemp) {
+//     // let temp = cityTemp.data.main.temp
+//     let temp = cityTemp
+//     console.log(temp)
+//     console.log( ((9 / 5) * (temp - 273.15) + 32).toFixed(2) )
+//     return Math.floor( ((9 / 5) * (temp - 273.15) + 32) )
+// }
 
-console.log(getFahren(250))
+// console.log(getFahren(250))
+
+
+// let nowObject = new Date()
+// console.log(nowObject)
+// console.log(typeof(nowObject))
+
+// console.log(nowObject.toLocaleDateString())
+// console.log(typeof(nowObject.toLocaleDateString()))
+
+// let yesterdayInt = nowObject.setDate(nowObject.getDate() - 1)
+// console.log(yesterdayInt)
+// console.log(typeof(yesterdayInt))
+
+// console.log('Now Less than yesterday?', nowObject < yesterdayInt)
+
+// let yesterdayObject = new Date()
+// yesterdayObject.setDate(yesterdayObject.getDate() - 1)
+// console.log(yesterdayObject)
+// console.log(typeof(yesterdayObject))
+
+// console.log('Is this Less than yesterday?', nowObject < yesterdayObject)
+
+let today = new Date()
+let time = today.getHours()
+console.log(today)
+console.log(typeof(today))
+console.log(time)
+
+let hoursToAdd=5;
+let currentDate = new Date();
+let futureDate = new Date(currentDate.getTime() + hoursToAdd*60*60*1000)
+let futureHour = futureDate.getHours()
+console.log(futureDate)
+console.log(typeof(futureDate))
+console.log(futureHour)
