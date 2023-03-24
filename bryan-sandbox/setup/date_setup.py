@@ -1,5 +1,5 @@
 # To Run :
-# python3 date_setup.py --date=11/1/2022 --course=FSW115 --morning_start=8 --evening_start=18   
+# python3 date_setup.py --date=11/1/2022 --course=FSW115 --course_id=20221128SC8A --morning_start=8 --evening_start=18   
 
 import argparse
 import datetime
@@ -49,10 +49,10 @@ for i in range(4):
         am_pm = ''
         start_time = None
         if j % 2 == 0:
-            am_pm = 'AM'
+            am_pm = '(A.M.)'
             start_time = morning_start
         else:
-            am_pm = 'PM'
+            am_pm = '(P.M.)'
             start_time = evening_start
         display_name_final = display_name_2.replace('AM/PM', am_pm)
         description = class_date.strftime("%A, %B %d, %Y")
